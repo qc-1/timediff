@@ -19,6 +19,10 @@ top5 [3 2 4 1 0]
 mse|mae|rmse|mape|mspe|corr
 0.41035238 0.4212738 0.6405875 9.32205 34339.9 25.59765
 
+
+conda create -n timediff python=3.10
+conda activate timediff
+
 CUDA_VISIBLE_DEVICES=2 python main_ddpm.py --pretrain_epochs 10 --train_epochs 100 --is_training 1 --ddpm_layers_I 5 --cond_ddpm_channels_conv 32 --ddpm_layers_inp 5 --ablation_study_F_type Linear  --cond_ddpm_num_layers 30 --ddpm_layers_II 10 --learning_rate 0.0001 --label_len 336
 
 
