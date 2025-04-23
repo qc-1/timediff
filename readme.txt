@@ -32,8 +32,12 @@ python main_ddpm.py --pretrain_epochs 10 --train_epochs 100 --is_training 1 --dd
  --ddpm_layers_inp 5 --ablation_study_F_type Linear  --cond_ddpm_num_layers 30 --ddpm_layers_II 10 --learning_rate 0.0001 --label_len 336 --dataset_name ECL --target MT_030 --num_vars 370
 
 
-
-
+Parameter Introduction:
+--is_training    1:训练    0：测试
+--type_sampler none：diffusion step可视化    dmp:非可视化
+--dataset_name   数据集名字
+--target  预测的目标
+--num_vars  数据集的变量数
 
 
 
