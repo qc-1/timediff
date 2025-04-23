@@ -35,7 +35,12 @@ Parameter Introduction:
 --is_training    1:训练    0：测试
 --type_sampler none：diffusion step可视化    dmp:非可视化
 --dataset_name   数据集名字
---target  预测的目标
+--target  预测的目标:target=MT_030 在 features=M 时，不会影响模型输出和mse等指标的计算，只是一个标记,模型输出所有变量，损失（如mse）是对所有变量整体计算的；如果你想只预测 MT_030，需要设置 --features S 或 --features MS，这时 target 才会生效,模型的输出、损失（如mse）、评估等都只针对 MT_030 这一列
+
+
+
+
+
 --num_vars  数据集的变量数
 
 
