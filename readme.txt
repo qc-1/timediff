@@ -2,6 +2,7 @@
 Environment:
 conda create -n timediff python=3.10
 conda activate timediff
+pip install -r requirements.txt
 
 Data:
 /root/autodl-tmp/datasets/prediction/data_autoformer/ETT-small/ETTh1.csv
